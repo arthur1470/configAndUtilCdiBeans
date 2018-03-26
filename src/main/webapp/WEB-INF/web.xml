@@ -3,7 +3,8 @@
 	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
 	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
 	version="3.1">
-	<display-name>Custos</display-name>
+	<display-name>{display-name}</display-name>
+
 	<welcome-file-list>
 		<welcome-file>index.xhtml</welcome-file>
 	</welcome-file-list>
@@ -13,13 +14,13 @@
 		<servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
 		<load-on-startup>1</load-on-startup>
 	</servlet>
-	
+
 	<servlet-mapping>
 		<servlet-name>Faces Servlet</servlet-name>
 		<url-pattern>*.xhtml</url-pattern>
 	</servlet-mapping>
-	
-	
+
+
 	<listener>
 	   <listener-class>org.jboss.weld.environment.servlet.Listener</listener-class>
 	</listener>
@@ -30,5 +31,5 @@
 	      javax.enterprise.inject.spi.BeanManager
 	   </resource-env-ref-type>
 	</resource-env-ref>
-	
+
 </web-app>
